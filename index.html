@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAGANRAJ PARTHIPAN | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #667eea;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .subtitle {
+      font-size: 1.3em;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+    .contact-links {
+      margin-top: 20px;
+    }
+    
+    .contact-links a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+    
+    .contact-links a:hover {
+      background: #764ba2;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    
+    section {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      color: #667eea;
+      border-bottom: 3px solid #764ba2;
+      padding-bottom: 10px;
+    }
+    
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+    
+    .experience-item, .education-item {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      border-left: 4px solid #667eea;
+    }
+    
+    .experience-item h3, .education-item h3 {
+      color: #667eea;
+      margin-bottom: 8px;
+      font-size: 1.4em;
+    }
+    
+    .company, .institution {
+      color: #764ba2;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .date {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    
+    .project {
+      margin-bottom: 35px;
+      padding: 25px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+    
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    
+    .project h3 {
+      color: #667eea;
+      margin-bottom: 12px;
+      font-size: 1.5em;
+    }
+    
+    .project p {
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    
+    .tech-stack {
+      margin: 15px 0;
+      font-weight: 600;
+      color: #764ba2;
+    }
+    
+    .project-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 18px;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 0.9em;
+      transition: all 0.3s;
+    }
+    
+    .project-link:hover {
+      background: #764ba2;
+      transform: scale(1.05);
+    }
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .skill-item {
+      padding: 15px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 600;
+      transition: transform 0.3s;
+    }
+    
+    .skill-item:hover {
+      transform: scale(1.05);
+    }
+    
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      margin-top: 40px;
+      color: #666;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+      
+      .subtitle {
+        font-size: 1em;
+      }
+      
+      section {
+        padding: 25px;
+      }
+      
+      h2 {
+        font-size: 1.7em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>JAGANRAJ PARTHIPAN</h1>
+      <p class="subtitle">MERN Stack Developer | UI/UX Designer | Automation Enthusiast</p>
+      <p>Fellow at NxtWave CCBP4.0 | Chennai, Tamil Nadu, India</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/jaganraj-parthipan-470a67327/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/JAGANRAJ25" target="_blank">GitHub</a>
+      </div>
+    </header>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Aspiring MERN Stack Developer with a passion for creating innovative web solutions and automation systems. Currently pursuing Full Stack Web Development at NxtWave while completing my Bachelor of Engineering in Electrical, Electronics and Communications Engineering at Rajalakshmi Institute of Technology.</p>
+      <p>I specialize in building responsive web applications, IoT systems, and automation workflows. My projects demonstrate proficiency in modern web technologies, embedded systems, and creative problem-solving.</p>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      
+      <div class="experience-item">
+        <h3>Web Developer</h3>
+        <p class="company">Zaalima Development Pvt. Ltd</p>
+        <p class="date">December 2025 - Present (Internship, Remote)</p>
+        <p>Currently working on web development projects, implementing modern technologies and best practices.</p>
+      </div>
+      
+      <div class="experience-item">
+        <h3>Web Developer</h3>
+        <p class="company">CodSoft</p>
+        <p class="date">June 2025 - July 2025 (Internship, Remote)</p>
+        <p>Gained hands-on experience in Full-Stack Development and HTML/CSS, working on various client projects.</p>
+      </div>
+      
+      <div class="experience-item">
+        <h3>IoT Intern</h3>
+        <p class="company">Kreotix Innovations</p>
+        <p class="date">March 2025 - May 2025 (Chennai, Tamil Nadu)</p>
+        <p>Worked on IoT projects involving embedded systems and automation solutions.</p>
+      </div>
+      
+      <div class="experience-item">
+        <h3>Prompt Engineering Trainee</h3>
+        <p class="company">Be10x</p>
+        <p class="date">November 2024 - December 2024 (India)</p>
+        <p>Learned many AI websites and tools that effectively save time and improve productivity.</p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Featured Projects</h2>
+      
+      <div class="project">
+        <h3>School Meal Track - QR-Based Attendance System</h3>
+        <p>A comprehensive QR-based web application to digitize mid-day meal attendance in schools with real-time tracking and voice feedback.</p>
+        <p class="tech-stack">Tech Stack: HTML, CSS, JavaScript, Firebase Firestore, SheetJS, Git, Netlify</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Admins generate unique QR codes per student and download as images</li>
+          <li>Teachers scan QR codes using browser camera, logging attendance with timestamps</li>
+          <li>Real-time data storage in Firebase Firestore</li>
+          <li>Excel export functionality (latest 20 records)</li>
+          <li>Voice feedback system announcing student names upon scan</li>
+        </ul>
+        <a href="https://github.com/JAGANRAJ25" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      
+      <div class="project">
+        <h3>Automated Railway Gate System</h3>
+        <p>An Arduino-based automatic railway crossing system that enhances safety and reduces human error through smart automation.</p>
+        <p class="tech-stack">Tech Stack: Arduino Uno, IR Sensors, Servo Motor, Buzzer, 16×2 I2C LCD</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+          <li>Automatic gate closure when first IR sensor detects train</li>
+          <li>Safety buzzer activation and LCD status updates</li>
+          <li>Automatic gate opening after train passes second sensor</li>
+          <li>Real-time display of gate status</li>
+        </ul>
+      </div>
+      
+      <div class="project">
+        <h3>Stock Market Telegram Bot (AUTOMATE)</h3>
+        <p>An n8n workflow integrated with Telegram providing instant stock market insights and analysis through conversational AI.</p>
+        <p class="tech-stack">Tech Stack: n8n (No-code Automation), Telegram Bot API, Stock Market APIs</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+          <li>Chat with bot (@jag25bot) for stock information</li>
+          <li>Instant insights, summaries, and market trend analysis</li>
+          <li>Real-time Telegram interaction</li>
+          <li>Accessible finance and investing information</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      
+      <div class="education-item">
+        <h3>Full Stack Web Developer</h3>
+        <p class="institution">NxtWave</p>
+        <p class="date">September 2024 - September 2026</p>
+        <p><strong>Skills:</strong> HTML/CSS, SQL, Python, JavaScript, React, Node.js</p>
+      </div>
+      
+      <div class="education-item">
+        <h3>Bachelor of Engineering - Electrical, Electronics and Communications Engineering</h3>
+        <p class="institution">Rajalakshmi Institute of Technology</p>
+        <p class="date">Graduated: September 2024</p>
+        <p>Eager to learn new things, humble, and punctual in work.</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-item">HTML/CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">React</div>
+        <div class="skill-item">Node.js</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">SQL</div>
+        <div class="skill-item">Firebase</div>
+        <div class="skill-item">Git & GitHub</div>
+        <div class="skill-item">Arduino/IoT</div>
+        <div class="skill-item">n8n Automation</div>
+        <div class="skill-item">UI/UX Design</div>
+        <div class="skill-item">Machine Learning</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 JAGANRAJ PARTHIPAN. All rights reserved.</p>
+      <p>Built with passion and dedication | Deployed on GitHub Pages</p>
+    </footer>
+  </div>
+</body>
+</html>
